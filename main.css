@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+body{
+
+    font-family: 'League Spartan', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 80%;
+    height: auto;
+}
+
+article{
+    width: 100%;
+    height: auto;
+   
+}
+
+
+
+.top-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-heading{
+    display: none;
+}
+
+h1{
+    font-size: 3rem;
+    width: fit-content;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.description{
+        color: hsl(303, 10%, 53%);
+
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+}
+
+li{
+    background-color:hsl(300, 24%, 96%);
+    color:hsl(300, 43%, 22%);
+    font-weight: 700;
+    margin-top: 0.625rem;
+    height: 3.125rem;
+    width: 28rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.625rem;
+        
+}
+
+
+.icon-space{
+    margin-left: 0.3rem;
+}
+
+.rating-space{
+    margin-left: 0.625rem;
+}
+
+li:nth-of-type(2){
+    margin-left: 3.125rem;
+  
+}
+li:nth-of-type(3){
+    margin-left: 6.25rem;
+  
+}
+
+.bottom-part{
+    margin-top: 3.125rem ;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.card{
+    width: 22rem; 
+    height: 14rem ; 
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    font-weight: 400;
+    border-radius: 0.625rem;
+}
+
+.card-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 1.8rem;
+    margin-top: 1.8rem;
+
+}
+.card-review{
+    width: fit-content;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+dl{
+    width: fit-content;
+    margin-left: 0.625rem;
+}
+
+dd{
+    margin: 0;
+    color: hsl(333, 80%, 67%);
+}
+
+.card-img{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 1.5rem;
+}
+
+.second-card{
+    margin-top: 1.25rem;
+}
+
+.third-card{
+    margin-top: 2.5rem;
+}
+
+footer{
+    margin-top: 1.25rem;
+}
+
+
+@media (max-width:700px) {
+    
+    article{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-part{
+        flex-direction: column;
+        align-items: column;
+
+    }
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+     
+    .left-side,.right-side{
+        width: 100%;
+    }
+    li{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    li:nth-of-type(2), li:nth-of-type(3) {
+        margin-left: 0px;
+    }
+   
+    .bottom-part{
+        flex-direction: column;
+        align-items: column;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+    
+    }
+    .first-card, .second-card, .third-card{
+        margin-top: 1.25rem;
+    }
+    footer{
+        text-align: center;
+    }
+}
