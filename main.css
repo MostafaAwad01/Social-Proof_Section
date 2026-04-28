@@ -12,7 +12,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
 
 main{
     width: 80%;
